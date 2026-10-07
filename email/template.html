@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Healing is better together</title>
+
+    <style>
+
+    /* --------------------------------
+       BASIC EMAIL STYLES
+    -------------------------------- */
+
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f1ec;
+    }
+
+    img {
+        border: 0;
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    /* --------------------------------
+       EMAIL CONTAINER
+    -------------------------------- */
+
+    .container {
+        width: 600px;
+        max-width: 600px;
+    }
+
+    .content {
+        background-color: #ffffff;
+    }
+
+    .pad {
+        padding: 24px;
+    }
+
+
+    /* --------------------------------
+       INTRO
+    -------------------------------- */
+
+    .headline {
+        margin: 0 0 16px 0;
+
+        font-size: 20px;
+        line-height: 28px;
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        color: #df7338;
+    }
+
+    .body-text {
+        margin: 0 0 24px 0;
+
+        font-size: 15px;
+        line-height: 24px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #535157;
+    }
+
+
+    /* --------------------------------
+       FEATURE SECTIONS
+    -------------------------------- */
+
+    .feature {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .feature:first-child {
+        padding-top: 10px;
+    }
+
+    .feature:last-child {
+        padding-bottom: 20px;
+    }
+
+
+    /* --------------------------------
+       FEATURE NUMBER
+    -------------------------------- */
+
+    .section-number {
+        width: 100%;
+        max-width: 420px;
+
+        margin: 0 auto 5px auto;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 24px;
+        line-height: 16px;
+
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        color: #fe9961;
+    }
+
+
+    /* --------------------------------
+       FEATURE TITLE
+    -------------------------------- */
+
+    .section-title {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto 18px auto;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 26px;
+
+        font-family: Georgia, "Times New Roman", serif;
+
+        color: #535157;
+    }
+
+
+    /* --------------------------------
+       FEATURE IMAGE
+    -------------------------------- */
+
+    .section-image {
+        width: 100%;
+        max-width: 420px;
+
+        height: auto;
+
+        margin: 0 auto;
+    }
+
+
+    /* --------------------------------
+       FEATURE 1 DECORATIVE ARCH
+    -------------------------------- */
+
+    .feature-visual {
+        width: 100%;
+        max-width: 420px;
+
+        margin: 0 auto 24px auto;
+
+        background-color: #fdf9ee;
+
+        border-radius: 140px 140px 20px 20px;
+
+        overflow: hidden;
+
+        border: 3px solid #c6c46f;
+
+        box-sizing: border-box;
+    }
+
+    .feature-visual .section-image {
+        max-width: 100%;
+    }
+
+
+    /* --------------------------------
+       FEATURE TEXT
+    -------------------------------- */
+
+    .section-text {
+        width: 100%;
+        max-width: 420px;
+
+        margin: 0 auto 20px auto;
+
+        font-size: 14px;
+        line-height: 22px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        color: #535157;
+
+        text-align: left;
+    }
+
+
+    /* --------------------------------
+       BUTTONS
+    -------------------------------- */
+
+    .button {
+        display: inline-block;
+      
+        padding: 9px 18px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 13px;
+        line-height: 18px;
+
+        font-weight: bold;
+
+        color: #ffffff;
+
+        text-decoration: none;
+
+        background-color: #c6c46f;
+
+        border-radius: 20px;
+        
+    }
+
+    .button-wrap {
+    text-align: center;
+    padding-top: 14px;
+    padding-left: 56px;
+    background-color: #f4f1ec;
+}
+
+
+    /* --------------------------------
+       FOOTER
+    -------------------------------- */
+
+    .footer {
+        background-color: #f4f1ec;
+
+        padding: 20px 32px;
+
+        font-family: Arial, Helvetica, sans-serif;
+
+        font-size: 12px;
+        line-height: 18px;
+
+        color: #535157;
+    }
+
+    .footer a {
+        color: #c6c46f;
+    }
+
+
+    /* --------------------------------
+       MOBILE
+    -------------------------------- */
+
+    @media screen and (max-width: 620px) {
+
+        .container {
+            width: 100% !important;
+        }
+
+        .pad {
+            padding: 24px 20px !important;
+        }
+
+        .headline {
+            font-size: 24px !important;
+            line-height: 32px !important;
+        }
+
+        .feature {
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .section-title {
+            font-size: 19px !important;
+            line-height: 25px !important;
+        }
+
+        .section-text {
+            font-size: 14px !important;
+            line-height: 21px !important;
+        }
+
+        .feature-visual,
+        .section-image,
+        .section-text,
+        .section-title,
+        .section-number {
+            max-width: 100% !important;
+        }
+
+    }
+
+</style>
+</head>
+
+
+<body>
+
+    <!-- Hidden preview text -->
+    <div style="display: none; max-height: 0; overflow: hidden;">
+        A new community app for people living with chronic illness.
+    </div>
+
+
+    <!-- OUTER EMAIL BACKGROUND -->
+    <table
+        role="presentation"
+        width="100%"
+        cellpadding="0"
+        cellspacing="0"
+        border="0"
+        bgcolor="#f4f1ec"
+    >
+        <tr>
+
+            <td
+                align="center"
+                style="padding: 20px 10px;"
+            >
+
+
+                <!-- MAIN EMAIL CONTAINER -->
+                <table
+                    role="presentation"
+                    class="container"
+                    width="600"
+                    cellpadding="0"
+                    cellspacing="0"
+                    border="0"
+                    bgcolor="#ffffff"
+                    style="width: 600px; max-width: 600px;"
+                >
+
+
+                    <!-- HERO IMAGE -->
+                    <tr>
+
+                        <td>
+                            <img
+                            class="hero-image"
+                                src="https://cdn.sanity.io/images/cyb6akuc/production/1520fb8eec68d64cf6340c29c4611cf17fc72ede-668x635.png?w=1200&fm=jpg"
+                                width="600"
+                                alt="RootdCore app showing the community feed"
+                                style="width: 100%; height: auto;"
+                            >
+                        </td>
+
+                    </tr>
+
+
+                    <!-- INTRODUCTION -->
+                    <tr>
+
+                        <td
+                            class="content pad"
+                            style="
+                                padding: 36px 32px 32px;
+                                font-family: Georgia, 'Times New Roman', serif;
+                                color: #535157;
+                            "
+                        >
+
+                            <h1 class="headline">
+                                Find connection.
+                                Find support.
+                                Find your rhythm.
+                            </h1>
+
+
+                            <p class="body-text">
+                                Healing is easier when we do it together.
+                                RootdCore is a community app made for people
+                                living with chronic illness. Check in with
+                                yourself, share what's helping, discover
+                                practitioners and recipes, and connect with
+                                people who understand.
+                            </p>
+
+
+                            <!-- BUTTON -->
+                            <table
+                                role="presentation"
+                                cellpadding="0"
+                                cellspacing="0"
+                                border="0"
+                            >
+                                <tr>
+
+                                    <td
+                                       
+                                    >
+
+                                        <a
+                                            href="https://rootdcore-app.netlify.app"
+                                            class="button"
+                                        >
+                                            Explore RootdCore
+                                        </a>
+
+                                    </td>
+
+                                </tr>
+                            </table>
+
+                        </td>
+
+                    </tr>
+
+
+                  <!-- FEATURES -->
+
+<tr>
+
+    <td
+        class="content"
+        style="
+            padding: 0 32px 20px;
+            font-family: Georgia, 'Times New Roman', serif;
+            color: #535157;
+        "
+    >
+
+
+        <!-- FEATURE 1 -->
+
+        <div class="feature">
+
+            <p class="section-number">
+                01
+            </p>
+
+            <h2 class="section-title">
+                Listen to what you need
+            </h2>
+
+
+            <!-- FEATURE 1 IMAGE -->
+
+            <div class="feature-visual">
+
+                <img
+                    class="section-image"
+                    src="https://cdn.sanity.io/images/cyb6akuc/production/4d70bff5e401e00baf459a78c2b744309cfc2053-2950x2084.png"
+                    width="600"
+                    alt="Person practicing a mindful check-in"
+                >
+
+            </div>
+
+
+            <p class="section-text">
+
+                Start with one simple question:
+                <em>How are you feeling today?</em>
+
+                Check in, reflect, and build a clearer
+                picture of what your mind and body need.
+
+            </p>
+
+            <div class="button-wrap">
+            <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+            >
+
+                <tr>
+
+                    <td>
+
+                        <a
+                            href="{{cta1Url}}"
+                            class="button"
+                        >
+                            Find your mood
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            </table>
+            </div>
+        </div>
+
+
+        <!-- FEATURE 2 -->
+
+        <div class="feature">
+
+            <p class="section-number">
+                02
+            </p>
+
+            <h2 class="section-title">
+                Find support that fits you
+            </h2>
+
+
+            <!-- FEATURE 2 IMAGE -->
+
+            <img
+                class="section-image"
+                src="https://cdn.sanity.io/images/cyb6akuc/production/aee784fd7d5f18c3cdebc7d80c16e9dd9a6c524b-2976x2056.png"
+                width="600"
+                alt="People connecting and supporting each other"
+                style="margin-bottom: 24px;"
+            >
+
+
+            <p class="section-text">
+
+                Discover practitioners, recipes, and wellness
+                resources that meet you where you are.
+
+                Share what's working, ask questions, and learn
+                from a community that understands.
+
+            </p>
+
+            <div class="button-wrap">
+            <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+            >
+
+                <tr>
+
+                    <td>
+
+                        <a
+                            href="{{cta2Url}}"
+                            class="button"
+                        >
+                            Join the community
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            </table>
+            </div>
+
+        </div>
+
+
+        <!-- FEATURE 3 -->
+
+        <div class="feature">
+
+            <p class="section-number">
+                03
+            </p>
+
+            <h2 class="section-title">
+                A space that's yours
+            </h2>
+
+
+            <!-- FEATURE 3 IMAGE -->
+
+            <img
+                class="section-image"
+                src="https://cdn.sanity.io/images/cyb6akuc/production/6d648a20f20bb5bfc8a58bdf3e94d6fb54dab03e-3125x2084.png"
+                width="600"
+                alt="RootdCore community and wellness experience"
+                style="margin-bottom: 24px;"
+            >
+
+
+            <p class="section-text">
+
+                Keep your reflections, posts, and wellness
+                journey together in one place.
+
+                Your profile grows with you.
+
+            </p>
+
+            <div class="button-wrap">
+
+            <table
+                role="presentation"
+                cellpadding="0"
+                cellspacing="0"
+                border="0"
+            >
+
+                <tr>
+
+                    <td>
+
+                        <a
+                            href="{{cta3Url}}"
+                            class="button"
+                        >
+                            Get started here
+                        </a>
+
+                    </td>
+
+                </tr>
+
+            </table>
+            </div>
+
+        </div>
+
+
+    </td>
+
+</tr>
+
+
+                    <!-- FOOTER -->
+                    <tr>
+
+                        <td class="footer">
+
+                            A portfolio project by Cori.
+                            <a href="https://github.com/Corilynnx/RootdCore-Project">
+                                View the code on GitHub
+                            </a>
+
+                        </td>
+
+                    </tr>
+
+
+                </table>
+                <!-- END MAIN EMAIL CONTAINER -->
+
+
+            </td>
+
+        </tr>
+    </table>
+    <!-- END OUTER EMAIL BACKGROUND -->
+
+
+</body>
+
+</html>
